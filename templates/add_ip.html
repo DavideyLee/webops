@@ -3,53 +3,53 @@
 <form class="form-horizontal" role="form" method="post">
 {% if ip_info %}
   <div class="control-group">
-    <label class="control-label">IP地址</label>
+    <label class="control-label">IP address</label>
     <div class="controls">
       <p class="control-label">{{ip_info.ipaddr}}</p></div>
   </div>
   <div class="control-group">
-    <label class="control-label">主机名</label>
+    <label class="control-label">Hostname</label>
     <div class="controls">
       <input type="text" class="input-block-level" name="hostname" value="{{ip_info.hostname}}"></div>
   </div>
   <div class="control-group">
-    <label class="control-label">系统类型</label>
+    <label class="control-label">System type</label>
     <div class="controls">
       <input type="text" class="input-block-level" name="ostype" value="{{ip_info.ostype}}"></div>
   </div>
   <div class="control-group">
-    <label class="control-label">端口</label>
+    <label class="control-label">Port</label>
     <div class="controls">
       <input type="text" class="input-block-level" name="ports" value="{{ip_info.ports}}"></div>
   </div>
   <div class="control-group">
-    <label class="control-label">应用</label>
+    <label class="control-label">Application</label>
     <div class="controls">
       <input type="text" class="input-block-level" name="application" value="{{ip_info.application}}"></div>
   </div>
 {% else %}
   <div class="control-group">
-    <label class="control-label">IP地址</label>
+    <label class="control-label">IP address</label>
     <div class="controls">
       <input type="text" class="input-block-level" name="ipaddr"></div>
   </div>
   <div class="control-group">
-    <label class="control-label">主机名</label>
+    <label class="control-label">Hostname</label>
     <div class="controls">
       <input type="text" class="input-block-level" name="hostname"></div>
   </div>
   <div class="control-group">
-    <label class="control-label">系统类型</label>
+    <label class="control-label">System type</label>
     <div class="controls">
       <input type="text" class="input-block-level" name="ostype"></div>
   </div>
   <div class="control-group">
-    <label class="control-label">端口</label>
+    <label class="control-label">Port</label>
     <div class="controls">
       <input type="text" class="input-block-level" name="ports"></div>
   </div>
   <div class="control-group">
-    <label class="control-label">应用</label>
+    <label class="control-label">Application</label>
     <div class="controls">
       <input type="text" class="input-block-level" name="application"></div>
   </div>
@@ -58,8 +58,8 @@
   <div class="control-group">
     <div class="controls">
       <p>{{ add_error }}</p>
-      <button type="submit" class="btn">提交</button>
-      <a class="btn" href="/ip_manage/">取消</a>
+      <button type="submit" class="btn">Submit</button>
+      <a class="btn" href="/ip_manage/">Cancel</a>
     </div>
   </div>
 </form>

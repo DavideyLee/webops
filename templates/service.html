@@ -15,7 +15,7 @@
           <a href="/add_ip/">php-fpm</a>
         </li>
         <li>
-          <a href="/add_dev/">添加主机</a>
+          <a href="/add_dev/">Add host</a>
         </li>
       </ul>
     </div>
@@ -27,16 +27,16 @@
       <div class="control-group">
         <div class="controls">
           <input type="text" class="input" name="search">
-          <button type="submit" class="btn">查询</button>
+          <button type="submit" class="btn">Qurey</button>
           </div>
       </div>
     </form>
 
       <table class="table">
         <th></th>
-        <th>主机</th>
-        <th>系统服务</th>
-        <th>服务状态</th>
+        <th>Host</th>
+        <th>Service</th>
+        <th>Status</th>
         <tr>{{search_error}}</tr>
         <form class="form-horizontal" role="form" method="post">
         <!--show ip list-->
@@ -51,7 +51,7 @@
               <td>{{ ip.application }}</td>
             </tr>
             {% endfor %}
-            <button type="submit" class="btn">删除</button>
+            <button type="submit" class="btn">Delete</button>
           {%endif%}
 
         </form>

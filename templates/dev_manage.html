@@ -4,19 +4,19 @@
     <div class="control-group">
       <div class="controls">
         <input type="text" class="input" name="search">
-        <button type="submit" class="btn">查询</button>
+        <button type="submit" class="btn">Qurey</button>
         </div>
     </div>
   </form>
 
   <table class="table">
     <th></th>
-    <th>IP地址</th>
+    <th>IP address</th>
     <th>cpu</th>
-    <th>内存</th>
-    <th>idc位置</th>
-    <th>服务器型号</th>
-    <th>系统类型</th>
+    <th>memery</th>
+    <th>idc</th>
+    <th>Server models</th>
+    <th>OS typr</th>
     <th>SN</th>
     <tr>{{search_error}}</tr>
     <form class="form-horizontal" role="form" method="post">
@@ -33,7 +33,7 @@
         <td>{{ dev.sn }}</td>
       </tr>
       {% endfor %}
-      <button type="submit" class="btn">删除</button>
+      <button type="submit" class="btn">Delete</button>
     {%endif%}
     </form>
   </table>

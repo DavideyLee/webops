@@ -7,7 +7,7 @@ from django.http import HttpResponse,HttpResponseRedirect
 # Create your views here.
 
 def index(request):
-    '''判断用户是否登陆'''
+    '''Determine whether the user login'''
     if not  request.user.is_authenticated():
         return HttpResponseRedirect('/login/')
     username=request.user.username
